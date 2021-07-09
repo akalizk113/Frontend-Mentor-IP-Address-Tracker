@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Frontend Mentor | IP Address Tracker</title>
+
+   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <style>
+      .attribution {
+         font-size: 11px;
+         text-align: center;
+      }
+
+      .attribution a {
+         color: hsl(228, 45%, 44%);
+      }
+   </style>
+</head>
+
+<body>
+
+   <header class="header">
+      <h1 class="heading">IP Address Tracker</h1>
+
+      <form action="" class="form">
+         <input type="text" class="input-form" placeholder="Search for any IP address or domain" >
+         <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+               <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg>
+         </button>
+         <span class="form-message"></span>  
+      </form>
+
+      <div class="infomation">
+         <div class="info info-ipAddress">
+            <h3 class="info__title">IP Address</h3>
+            <span class="info__desc">N/A</span>
+         </div>
+   
+         <div class="info info-location">
+            <h3 class="info__title">Location</h3>
+            <span class="info__desc">N/A</span>
+         </div>
+   
+         <div class="info info-timeZone">
+            <h3 class="info__title">Timezone</h3>
+            <span class="info__desc">UTC - N/A</span>
+         </div>
+   
+         <div class="info info-isp">
+            <h3 class="info__title">ISP</h3>
+            <span class="info__desc">N/A</span>
+         </div>
+         
+      </div>
+   </header>
+
+
+   <div class="map-container">
+   </div>
+
+   
+   <!-- add offset value dynamically using the API -->
+   <footer class="footer">
+      <div style="margin-top: 16px" class="attribution">
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+         Coded by <a href="#">pt_aNh</a>.
+      </div>
+
+   </footer>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+   <script src="./main.js"></script>
+</body>
+
+</html>
